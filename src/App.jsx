@@ -11,15 +11,17 @@ function App() {
   };
 
   return (
-    <>
-      <Input
-        value={value}
-        label="nama"
-        placeholder="Type name here..."
-        onChange={InputChange}
-        required
-      />
-    </>
+    <div className="max-w-xl mx-auto p-4 bg-white">
+      <div className="flex h-screen justify-center items-center">
+        <Input
+          value={value}
+          label="nama"
+          placeholder="Type name here..."
+          onChange={InputChange}
+          required
+        />
+      </div>
+    </div>
   );
 }
 
