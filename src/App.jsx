@@ -6,18 +6,21 @@ import Input from "./Input";
 
 function App() {
   const [value, setValue] = useState("");
-  const InputChange = (val) => {
+  const handleInputChange = (val) => {
+    // ✅ Nama function lebih deskriptif
     setValue(val);
   };
 
   return (
-    <div className="max-w-xl mx-auto p-4 bg-white">
-      <div className="flex h-screen justify-center items-center">
+    <div className="min-h-screen flex justify-center items-center bg-gray-500">
+      {" "}
+      {/* ✅ Layout lebih clean */}
+      <div className="max-w-xl w-full mx-auto p-6 bg-white rounded-lg shadow-sm">
         <Input
           value={value}
           label="nama"
           placeholder="Type name here..."
-          onChange={InputChange}
+          onChange={handleInputChange}
           required
         />
       </div>

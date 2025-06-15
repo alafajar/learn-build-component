@@ -28,6 +28,7 @@ const Input = (props) => {
         )}
       </label>
       <input
+        id={inputId}
         value={value ?? ""}
         onChange={(event) => onChange(event.target.value)}
         type={type}
